@@ -37,31 +37,3 @@ El servidor queda en `http://localhost:3000`.
 | Actualizar | PUT | /mascotas/:id |
 | Eliminar | DELETE | /mascotas/:id |
 
-## Pruebas rápidas (con curl)
-
-Crear:
-```bash
-curl -X POST http://localhost:3000/mascotas -H "Content-Type: application/json" -d "{\"nombre\":\"Rex\",\"especie\":\"Perro\",\"edad\":1}"
-```
-
-Listar todas:
-```bash
-curl http://localhost:3000/mascotas
-```
-
-Ver una:
-```bash
-curl http://localhost:3000/mascotas/1
-```
-
-Actualizar:
-```bash
-curl -X PUT http://localhost:3000/mascotas/1 -H "Content-Type: application/json" -d "{\"adoptado\":true}"
-```
-
-Eliminar:
-```bash
-curl -X DELETE http://localhost:3000/mascotas/1
-```
-
-También puedes probar todo esto con Thunder Client en VS Code en lugar de curl.
